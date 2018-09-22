@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: LeFOTxrX5MpulQHu8pyMV4uDSPAWUiyT5tQtRaX/DqCkVOp9Pm3FeP5cHhRMdykuUidZlFYtYt6uur7IVpGCft1Znp+Ljyq4eQyoLfEja3xjPnc4aRLAcgb7J6sj1+bzmboDAY7FPg4mq4TxdWJSTPSYL0s9x0V+9eOAsPPQkp62V/QhMPwITI0AAPMVeO1P3Lfnjxz3I/SqeC4i3hPlBJuHe/GpA8xjzx3JHWA/D4lM6HtqWsiEnlv5NSL911pbrtcP8/5mAFrNGjIuMhGxz7Jo46gDHSpPCbpyh8LP3oo9DfEkqb1Q3yWB/9IBWLC0f8PPZJiaIE3YGkWiMIlnHfMyFhbVbqXelTyy8hbMbiTrO400eLlgokA9m8jbCdLqgQQqEuNM4QQQrt+if6mS8usrkQT3ER4lWuoVlBO97fvI8b05oL4abBM2R0Yx1SGbWXA2RnFh5BZ4CekPG158x3yYgtdlM4RSjn7mGPBPnJXN2N+/BdxYhJxvNyr7YOEwLQ3IWhlyPduiF/zCCe/nT325lT4PnfncEZGfcyGwuy2iWSJYXOvyJ+jSoM6gnamFuAXwf0bcNXdT2RifrVuneQea0fOMwnjqb+00CyMV8WgiKgsEK/uIkwESdbtfE8y6h/yGt/cv0p3dsWKeMKQl3LxczJPpcpQ+i7WCfsHBRsE=
+  app: boiling-dusk-28817
+  on:
+    repo: BrotherFatcake/HotCold_test
